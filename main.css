@@ -1,0 +1,39 @@
+body {
+  background: #33d9b2;
+  font-size: 12px;
+}
+
+body,
+button,
+input {
+  font-family: "Arial", cursive;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 01700px;
+  margin: auto;
+  padding: 10px;
+}
+.screen {
+  position: relative;
+  background: #3e3e3e;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
