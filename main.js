@@ -1,21 +1,23 @@
-const calculate = () => {
-  wd;
-  let web = document.getElementById("web");
-  let maths = document.getElementById("math");
-  let comp = document.getElementById("comp");
-  let phy = document.getElementById("phy");
+const calc = () => {
+  let web = document.getElementById("web").value;
+  let maths = document.getElementById("maths").value;
+  let comp = document.getElementById("comp").value;
+  let phy = document.getElementById("phy").value;
 
   let grades = "";
 
   //   Input  is string s typecasting is necessary
 
-  let totalgrades =
+  let totalGrades =
     parseFloat(web) + parseFloat(maths) + parseFloat(comp) + parseFloat(phy);
 };
 
 // Checking the condition for the providing the grade to student based on percentage
 
 let percentage = (totalgrade / 400) * 100;
+alert(percentage);
+
+debugger;
 if (totalgrade <= 100 && percentage >= 80) {
   grades = "A";
 } else if (totalgrade <= 79 && percentage >= 60) {
