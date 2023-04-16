@@ -30,12 +30,22 @@ showResult.addEventListener("click", function () {
   percentage = (totalGrades / 400) * 100;
 
   // Determine the grade based on percentage
-  if (percentage >= 80) {
+  if (percentage >= 100) {
+    grades = "A+";
+  } else if (percentage >= 95) {
     grades = "A";
-  } else if (percentage >= 60) {
+  } else if (percentage >= 90) {
+    grades = "B+";
+  } else if (percentage >= 85) {
     grades = "B";
-  } else if (percentage >= 40) {
+  } else if (percentage >= 80) {
+    grades = "C+";
+  } else if (percentage >= 75) {
     grades = "C";
+  } else if (percentage >= 70) {
+    grades = "D+";
+  } else if (percentage >= 65) {
+    grades = "D";
   } else {
     grades = "F";
   }
