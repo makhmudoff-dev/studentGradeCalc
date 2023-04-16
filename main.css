@@ -106,7 +106,7 @@ input {
   color: #218c74;
 }
 
-.showData {
+#showData {
   text-align: center;
   color: #fff;
   font-size: 1.2rem;
